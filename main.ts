@@ -26,4 +26,5 @@ if (!ENTRY.trim()) {
 
 mkdirSync("/output", { recursive: true });
 writeFileSync("/output/entry.txt", ENTRY, "utf8");
+// Single line, no trailing newline: the gate counts every character.
 console.log(`wrote /output/entry.txt (${ENTRY.length} chars)`);
